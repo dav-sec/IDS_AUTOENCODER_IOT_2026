@@ -17,16 +17,13 @@ El repositorio contiene el código fuente para la extracción de característica
 ```text
 IDS_AUTOENCODER_IOT_2026/
 │
-├── CSV_Output/                             # Contiene los datasets procesados tras la extracción (ej. benign_final.csv, bruteforce_final.csv)
-|   ├── dataset_limpio.csv                      # Dataset consolidado final utilizado para el entrenamiento y evaluación
-│
 ├── 01_extraccion_flujos_nfstream.ipynb     # Extracción de características (51 dimensiones) desde archivos crudos
 ├── 01_5_consolidacion_csv.ipynb            # Unificación y agrupación de los flujos de red extraídos
 ├── 02_preprocesamiento_limpieza.ipynb      # Aplicación de Min-Max Scaler y eliminación de datos atípicos
 ├── 03_autoencoder_entrenamiento.ipynb      # Definición de la arquitectura y entrenamiento del modelo con datos benignos
 └── validacion.ipynb                        # Evaluación del conjunto de prueba mixto, generación de Matriz de Confusión y cálculo de métricas
 ```
-(Nota: Los archivos crudos PCAP originales y la carpeta del entorno virtual venv han sido excluidos de este repositorio por motivos de capacidad y buenas prácticas de control de versiones).
+(Nota: Los archivos crudos PCAP originales, los archivos CSV de datasets procesados y la carpeta del entorno virtual venv han sido excluidos de este repositorio por motivos de capacidad y buenas prácticas de control de versiones).
 
 ## Resultados y Métricas del Modelo
 
