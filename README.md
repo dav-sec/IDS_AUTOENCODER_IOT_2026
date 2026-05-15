@@ -18,7 +18,7 @@ El repositorio contiene el código fuente para la extracción de característica
 IDS_AUTOENCODER_IOT_2026/
 │
 ├── CSV_Output/                             # Contiene los datasets procesados tras la extracción (ej. benign_final.csv, bruteforce_final.csv)
-├── dataset_limpio.csv                      # Dataset consolidado final utilizado para el entrenamiento y evaluación
+|   ├── dataset_limpio.csv                      # Dataset consolidado final utilizado para el entrenamiento y evaluación
 │
 ├── 01_extraccion_flujos_nfstream.ipynb     # Extracción de características (51 dimensiones) desde archivos crudos
 ├── 01_5_consolidacion_csv.ipynb            # Unificación y agrupación de los flujos de red extraídos
